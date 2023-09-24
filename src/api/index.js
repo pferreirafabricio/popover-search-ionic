@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Storage } from '@capacitor/storage';
 
 const baseURL = process.env.VUE_APP_API_URL;
 
@@ -9,13 +8,6 @@ const api = axios.create({
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
-});
-
-api.interceptors.request.use(async (config) => {
-  const token = await Storage.get({ key: 'token' });
-  config.headers.Authorization = `Bearer ${token.value || null}`;
-
-  return config;
 });
 
 api.interceptors.response.use((response) => response,

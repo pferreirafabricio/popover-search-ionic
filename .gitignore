@@ -38,3 +38,5 @@ resources/windows/icon
 resources/windows/splash
 
 dist*
+
+.env

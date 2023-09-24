@@ -77,10 +77,7 @@ import {
 
 import { ref } from 'vue';
 
-import { mapGetters } from 'vuex';
 import { useRouter } from 'vue-router';
-
-import { Storage } from '@capacitor/storage';
 
 export default {
   name: 'Menu',
@@ -97,13 +94,6 @@ export default {
     IonTitle,
   },
   computed: {
-    ...mapGetters('menu', [
-      'getPublic',
-      'getWithoutAuth',
-      'getNeedAuth',
-      'getMenuByUserType',
-    ]),
-    ...mapGetters('user', ['getUserType', 'getUserName']),
     menuItems() {
       return this.appPages;
     },
@@ -138,53 +128,8 @@ export default {
     };
   },
   mounted() {
-    this.emitter.on('logged', async () => {
-      await this.mountMenu();
-      this.fillUserName();
-    });
-
-    this.mountMenu();
-    this.fillUserName();
-  },
-  beforeUnmount() {
-    this.mountMenu();
   },
   methods: {
-    async verifyIsLoggedIn() {
-      const token = await Storage.get({ key: 'token' });
-      this.isLoggedIn = !!token.value;
-    },
-    async mountMenu() {
-      await this.verifyIsLoggedIn();
-
-      let userType = await this.getUserType;
-      userType = await this.getUserType;
-
-      const userMenuItems = await this.getMenuByUserType(userType);
-
-      this.appPages = [
-        ...(this.isLoggedIn && userMenuItems ? userMenuItems : []),
-        ...(this.isLoggedIn ? this.getNeedAuth : this.getWithoutAuth),
-        ...this.getPublic,
-      ];
-
-      this.$forceUpdate();
-    },
-    redirect(index, menuItem) {
-      this.selectedIndex = index;
-
-      if (menuItem.link) {
-        window.open(menuItem.link, '_blank');
-        return;
-      }
-
-      // eslint-disable-next-line no-unused-expressions
-      menuItem.url !== '/logout' ? this.router.push(menuItem.url) : (window.location = menuItem.url);
-    },
-    async fillUserName() {
-      const name = await this.getUserName;
-      this.userName = name.split(' ')[0] || '';
-    },
   },
 };
 </script>
