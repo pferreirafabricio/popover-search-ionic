@@ -1,19 +1,19 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHistory } from "@ionic/vue-router";
 
 const routes = [
   {
-    path: '/',
-    redirect: '/home',
+    path: "/",
+    redirect: "/home",
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import('../pages/Home.vue'),
+    path: "/home",
+    name: "home",
+    component: () => import("../pages/Home.vue"),
   },
   {
-    path: '/:catchAll(.*)',
-    name: 'not-found',
-    component: () => import('../pages/Error404.vue'),
+    path: "/:catchAll(.*)",
+    name: "not-found",
+    component: () => import("../pages/Error404.vue"),
   },
 ];
 

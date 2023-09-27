@@ -1,14 +1,16 @@
 <template>
   <div class="mt-1">
-    <ion-text color="danger" class="fs-14">{{ text }}</ion-text>
+    <ion-text color="danger" class="fs-14">
+      {{ text }}
+    </ion-text>
   </div>
 </template>
 
 <script>
-import { IonText } from '@ionic/vue';
+import { IonText } from "@ionic/vue";
 
 export default {
-  name: 'ErrorMessage',
+  name: "ErrorMessage",
   components: {
     IonText,
   },

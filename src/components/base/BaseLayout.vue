@@ -5,25 +5,24 @@
         <ion-buttons slot="start">
           <div v-if="pageDefaultBackLink">
             <ion-back-button
-              text="Back"
               v-if="!ignoreHistory"
+              text="Back"
               :default-href="pageDefaultBackLink"
-            ></ion-back-button>
+            />
             <ion-back-button
               v-else
               text="Back"
-              @click.prevent="back()"
               default-href=""
-            ></ion-back-button>
+              @click.prevent="back()"
+            />
           </div>
-          <ion-menu-button
-            color="primary"
-            v-show="showMenuButton"
-          ></ion-menu-button>
-        <ion-text class="ml-4 font-weight-bold">{{ pageTitle }}</ion-text>
+          <ion-menu-button v-show="showMenuButton" color="primary" />
+          <ion-text class="ml-4 font-weight-bold">
+            {{ pageTitle }}
+          </ion-text>
         </ion-buttons>
-        <ion-buttons class="ml-auto" slot="end">
-          <slot name="actions-end"></slot>
+        <ion-buttons slot="end" class="ml-auto">
+          <slot name="actions-end" />
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
@@ -43,11 +42,21 @@ import {
   IonButtons,
   IonMenuButton,
   IonText,
-} from '@ionic/vue';
-import { useRouter } from 'vue-router';
+} from "@ionic/vue";
+import { useRouter } from "vue-router";
 
 export default {
-  name: 'BaseLayout',
+  name: "BaseLayout",
+  components: {
+    IonText,
+    IonPage,
+    IonHeader,
+    IonToolbar,
+    IonContent,
+    IonBackButton,
+    IonButtons,
+    IonMenuButton,
+  },
   props: {
     pageTitle: {
       type: String,
@@ -69,16 +78,6 @@ export default {
       type: String,
       required: false,
     },
-  },
-  components: {
-    IonText,
-    IonPage,
-    IonHeader,
-    IonToolbar,
-    IonContent,
-    IonBackButton,
-    IonButtons,
-    IonMenuButton,
   },
   setup() {
     const router = useRouter();
