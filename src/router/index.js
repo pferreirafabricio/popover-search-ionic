@@ -10,11 +10,6 @@ const routes = [
     name: "home",
     component: () => import("../pages/Home.vue"),
   },
-  {
-    path: "/:catchAll(.*)",
-    name: "not-found",
-    component: () => import("../pages/Error404.vue"),
-  },
 ];
 
 const router = createRouter({

@@ -1,8 +1,6 @@
 <script setup>
 import { IonIcon, IonBadge } from "@ionic/vue";
-
 import { locationOutline } from "ionicons/icons";
-
 import { defineProps } from "vue";
 
 defineProps({
@@ -15,13 +13,18 @@ defineProps({
     <span class="fs-12 text-justify">
       {{ animal.name }}
     </span>
-    <div style="display: flex; align-items: center; gap: 0.3rem">
+    <div style="display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap;">
       <small> Habitat: </small>
 
       <ion-badge
         v-for="location in animal.locations"
         :key="location"
-        style="font-size: 0.7rem; display: flex; align-items: center; gap: 0.2rem"
+        style="
+          font-size: 0.7rem;
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
+        "
       >
         <ion-icon :icon="locationOutline" /> {{ location }}
       </ion-badge>
