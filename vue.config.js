@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  publicPath: "./",
+  publicPath: process.env.VUE_APP_PUBLIC_PATH || "/",
   devServer: {
     port: process.env.VUE_APP_PORT || "8080",
   },
