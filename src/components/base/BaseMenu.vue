@@ -40,11 +40,8 @@ function redirect(index, menuItem) {
     window.open(menuItem.link, "_blank");
     return;
   }
-
-  // eslint-disable-next-line no-unused-expressions
-  menuItem.url !== "/logout"
-    ? router.push(menuItem.url)
-    : (window.location = menuItem.url);
+  
+  router.push(menuItem.url)
 }
 </script>
 
@@ -52,11 +49,13 @@ function redirect(index, menuItem) {
   <ion-menu content-id="main-content" type="overlay">
     <ion-header>
       <ion-toolbar class="ion-text-center" color="primary">
-        <ion-title class="remove-padding"> Welcome </ion-title>
+        <ion-title class="remove-padding">
+          Popover Search
+        </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list id="inbox-list" style="padding: 10px">
+      <ion-list style="padding: 0.8rem">
         <ion-menu-toggle
           v-for="(menuItem, index) in appPages"
           :key="`${menuItem.title}${index}`"
@@ -68,7 +67,7 @@ function redirect(index, menuItem) {
             class="hydrated"
             router-direction="root"
             :class="{ selected: selectedIndex === index }"
-            :style="menuItem.link ? 'cursor: pointer' : ''"
+            style="cursor: pointer"
             @click="redirect(index, menuItem)"
           >
             <!-- eslint-disable-next-line vue/no-deprecated-slot-attribute -->

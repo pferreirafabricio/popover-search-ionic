@@ -5,8 +5,6 @@ import App from "./App.vue";
 import router from "./router";
 
 import BaseLayout from "./components/base/BaseLayout.vue";
-import ErrorMessage from "./components/ErrorMessage.vue";
-import Loading from "./components/Loading.vue";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/vue/css/core.css";
@@ -30,8 +28,6 @@ import "./theme/index.css";
 const app = createApp(App).use(IonicVue).use(router);
 
 app.component("BaseLayout", BaseLayout);
-app.component("ErrorMessage", ErrorMessage);
-app.component("Loading", Loading);
 
 router.isReady().then(() => {
   app.mount("#app");

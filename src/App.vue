@@ -1,26 +1,13 @@
 <template>
   <IonApp>
     <IonSplitPane content-id="main-content">
-      <Menu />
+      <BaseMenu />
       <ion-router-outlet id="main-content" />
     </IonSplitPane>
   </IonApp>
 </template>
 
-<script>
+<script setup>
 import { IonApp, IonRouterOutlet, IonSplitPane } from "@ionic/vue";
-
-import { defineComponent } from "vue";
-
-import Menu from "./components/Menu.vue";
-
-export default defineComponent({
-  name: "App",
-  components: {
-    IonApp,
-    IonRouterOutlet,
-    IonSplitPane,
-    Menu,
-  },
-});
+import BaseMenu from "./components/base/BaseMenu.vue";
 </script>
