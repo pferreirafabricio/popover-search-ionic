@@ -27,7 +27,7 @@
 
 > **Note**
 > 
-> Take a look in https://pferreirafabricio.github.io/popover-search-ionic/ for a live test
+> Take a look in https://pferreirafabricio.github.io/popover-search-ionic/ for a live test, or you could download the `.apk` file in the [release v0.0.1](https://github.com/pferreirafabricio/popover-search-ionic/releases/tag/v0.0.1)
 
 ## :open_book: About
 
