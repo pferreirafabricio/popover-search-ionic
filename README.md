@@ -20,8 +20,8 @@
 ## :eyes: Overview
 
 <div>
-  <img alt="Printscreen of the application in a desktop view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/1cf54b3e-70e9-4a97-a0b1-f6c6ab2a92cd" width="1000px" />
-  <img alt="Printscreen of the application in a mobile view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/d65fd077-7676-484e-98bf-fd8102b706d8" height="400px" />
+  <img alt="Printscreen of the application in a desktop view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/1c5f5a5f-a654-4220-856b-7f53117f36c6" width="1000px" />
+  <img alt="Printscreen of the application in a mobile view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/386804a9-84ea-43a8-baf6-55ce83e3c442" height="400px" />
 </div>
 <br/>
 
