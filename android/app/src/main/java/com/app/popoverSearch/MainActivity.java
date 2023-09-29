@@ -1,4 +1,4 @@
-package com.app.boilerplate;
+package com.app.popoverSearch;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,8 +1,7 @@
 {
-  "appId": "com.app.boilerplate",
-  "appName": "Ionic Vue Boilerplate",
-  "bundledWebRuntime": false,
-  "webDir": "dist",
-  "npmClient": "npm",
-  "cordova": {}
+	"appId": "com.app.popoverSearch",
+	"appName": "Popover Search",
+	"webDir": "dist",
+	"npmClient": "npm",
+	"cordova": {}
 }
