@@ -1,49 +1,51 @@
 <h1 align="right">
-  <img src="https://ionicframework.com/img/vue/logo@2x.png" width="200px" align="left" />
-  Ionic + Vue + Capacitor = 💖
+  <img alt="Project's logo" src="https://github.com/pferreirafabricio/popover-search-ionic/blob/main/public/assets/icon/logo-white-bg.jpeg" width="200px" align="left" />
+  Popover search
 </h1>
 
 <p align="right">
-  <!-- License -->
+  A simple Ionic app to show how to implement a search bar with a popover below it
+  <br /><br />
   <a>
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge&labelColor=3880FF&color=2FBD7B">
+    <img alt="License badge" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge&labelColor=FFF&color=2A0944">
   </a>
 </p>
-<br>
+<be>
+
+<p align="center">
+  <img alt="Badge showing the Github Action status for linting" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/main.yml/badge.svg">
+  <img  alt="Badge showing the Github Action status for deploying the app to Github Pages" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/deploy.yml/badge.svg">
+</p>
 
 ## :eyes: Overview
 
 <div>
-  <img src="./docs/screenshots/home.png" width="auto" height="400px"/>
-  <img src="./docs/screenshots/components.png" width="auto" height="400px"/>
-  <img src="./docs/screenshots/login.png" width="auto" height="400px"/>
+  <img alt="Printscreen of the application in a desktop view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/1c5f5a5f-a654-4220-856b-7f53117f36c6" width="1000px" />
+  <img alt="Printscreen of the application in a mobile view" src="https://github.com/pferreirafabricio/popover-search-ionic/assets/42717522/386804a9-84ea-43a8-baf6-55ce83e3c442" height="400px" />
 </div>
 <br/>
 
-> **Note**:
-> Take a look in https://pferreirafabricio.github.io/ionic-vue-boilerplate for a live test. OBS: Don't forget to press F12 and toggle device emulation.
-
-> **Note**:
-> If you prefer you can download the .apk file in the [releases page](https://github.com/pferreirafabricio/ionic-vue-boilerplate/releases)
+> **Note**
+> 
+> Take a look in https://pferreirafabricio.github.io/popover-search-ionic/ for a live test
 
 ## :open_book: About
 
-This project is a simple Ionic app template, using VueJS framework and Capacitor. It brings a simple folder structure and some components.
+This project is a simple Ionic app, using VueJS, Ionic, and Capacitor to show how to use the ionic popover component [ion-popover](https://ionicframework.com/docs/api/popover) to implement the results of an input search below it.
 
 ## :bricks: This project was built with:
 
 - [Ionic](https://ionicframework.com/)
+- [Vue](https://vuejs.org/)
 - [Ionic + Vue](https://ionicframework.com/vue)
 - [Capacitor](https://capacitorjs.com/)
-- [Vue](https://vuejs.org/)
-- [Bootstrap Utilities for layout](https://getbootstrap.com/docs/4.0/layout/utilities-for-layout/)
 
 ## :running_man: Installing and Running
 
-1.  Clone this repository `https://github.com/pferreirafabricio/ionic-vue-boilerplate.git`
-2.  Enter in the project's folder: `cd ionic-vue-boilerplate`
+1.  Clone this repository `https://github.com/pferreirafabricio/popover-search-ionic.git`
+2.  Enter in the project's folder: `cd popover-search-ionic`
 3.  Run `npm install`
-4.  Run `npm run serve`
+4.  Run `npm run serve` or `npm run dev`
 5.  Access `http://localhost:8080` in your browser and be happy 😃
 
 ## :recycle: Contribute
