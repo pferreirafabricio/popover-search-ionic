@@ -7,14 +7,10 @@
   A simple Ionic app to show how to implement a search bar with a popover below it
   <br /><br />
   <a>
+    <img alt="Badge showing the Github Action status for linting" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/main.yml/badge.svg">
+    <img  alt="Badge showing the Github Action status for deploying the app to Github Pages" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/deploy.yml/badge.svg">
     <img alt="License badge" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge&labelColor=FFF&color=2A0944">
   </a>
-</p>
-<be>
-
-<p align="center">
-  <img alt="Badge showing the Github Action status for linting" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/main.yml/badge.svg">
-  <img  alt="Badge showing the Github Action status for deploying the app to Github Pages" src="https://github.com/pferreirafabricio/popover-search-ionic/actions/workflows/deploy.yml/badge.svg">
 </p>
 
 ## :eyes: Overview
