@@ -23,13 +23,13 @@
 
 > **Note**
 > 
-> Take a look in https://pferreirafabricio.github.io/popover-search-ionic/ for a live test, or you could download the `.apk` file in the [release v0.0.1](https://github.com/pferreirafabricio/popover-search-ionic/releases/tag/v0.0.1)
+> Take a look at https://pferreirafabricio.github.io/popover-search-ionic/ for a live test, or you could download the `.apk` file in the [release v0.0.1](https://github.com/pferreirafabricio/popover-search-ionic/releases/tag/v0.0.1)
 
 ## :open_book: About
 
 This project is a simple Ionic app, using VueJS, Ionic, and Capacitor to show how to use the ionic popover component [ion-popover](https://ionicframework.com/docs/api/popover) to implement the results of an input search below it.
 
-## :bricks: This project was built with:
+## 🧱 This project was built with:
 
 - [Ionic](https://ionicframework.com/)
 - [Vue](https://vuejs.org/)
