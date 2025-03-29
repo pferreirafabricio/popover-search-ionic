@@ -27,7 +27,7 @@
     "@ionic/vue": "^7.4.1",
     "@ionic/vue-router": "^7.4.1",
     "@vue/reactivity": "^3.2.6",
-    "axios": "^1.7.4",
+    "axios": "^1.8.2",
     "core-js": "^3.16.4",
     "ionicons": "^5.5.3",
     "vue": "^3.3.4",
