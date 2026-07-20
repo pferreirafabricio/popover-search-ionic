@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><%= VUE_APP_TITLE %></title>
+        <title><%= process.env.VUE_APP_TITLE || "Popover Search Ionic" %></title>
         <meta
             name="description"
             content="A simple Ionic app to show how to implement a search bar with a popover below it"
@@ -13,7 +13,10 @@
         />
         <meta name="author" content="Fabrício Pinto Ferreira" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="<%= VUE_APP_TITLE %>" />
+        <meta
+            property="og:title"
+            content="<%= process.env.VUE_APP_TITLE || "Popover Search Ionic" %>"
+        />
         <meta property="og:image" content="assets/icon/logo-white-bg.jpeg" />
         
         <meta
